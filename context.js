@@ -20,13 +20,11 @@ var wall_e = new Robot("Wall-E");
 console.log(add, 0, 1);
 
 // #2 
-var voltron = add.call;
-console.log(voltron, 2, 3);
+console.log(add.call(voltron, 2, 3));
 
 // #3
-var optimus = add.call;
-console.log(optimus, 20, 30);
+console.log(add.call(optimus, 20, 30));
 
 // #4
-var calculate = add.bind(bender);
-console.log(calculate, "drinking ", "beer");
+var calculate = {name: "bender"};
+console.log(add.call(calculate, "drinking ", "beer"));
