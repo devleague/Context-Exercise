@@ -31,5 +31,6 @@ console.log(add.apply(optimus, [20, 30]));
 // #4
 
 var calculate = add.bind(bender);
-
+//The output of this was "Bender Rodriguez can count to drinking beer"
+// Is this the correct output?
 console.log(calculate("drinking ", "beer"));
