@@ -23,7 +23,8 @@ console.log(add(0,1));
 console.log(add.call(voltron,2,3));
 
 // #3
-console.log(  );
+var cars = [20,30];
+console.log(add.apply(optimus,cars));
 
 // #4
 
