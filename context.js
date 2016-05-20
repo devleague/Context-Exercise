@@ -1,7 +1,7 @@
 var Robot = function (name) {
   this.name = name;
 
-}
+};
 
 function add ( op1, op2 ) {
   this.name = this.name || "Humans";
@@ -15,15 +15,17 @@ var megaman = new Robot("Mega Man");
 var bmo = new Robot("B-Mo");
 var wall_e = new Robot("Wall-E");
 
+var optiArray = [20, 30];
+var calculate = add.bind(bender, 'drinking', ' beer');
 
 // #1
-console.log(  );
+console.log(add(0, 1));
 
-// #2  
-console.log(  );
+// #2
+console.log(add.call(Voltron, 2, 3));
 
 // #3
-console.log(  );
+console.log(add.apply(optimus, optiArray));
 
 // #4
 
