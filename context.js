@@ -27,5 +27,5 @@ var cars = [20,30];
 console.log(add.apply(optimus,cars));
 
 // #4
-
-console.log(  );
+var calculate = add.bind(bender,  "Drinking", "Beer");
+console.log(calculate());
