@@ -20,7 +20,7 @@ var wall_e = new Robot("Wall-E");
 console.log(add(0,1));
 
 // #2
-console.log(  );
+console.log(add.call(voltron,2,3));
 
 // #3
 console.log(  );
