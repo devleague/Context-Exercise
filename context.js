@@ -1,11 +1,14 @@
 var Robot = function (name) {
   this.name = name;
-
 }
 
 function add ( op1, op2 ) {
   this.name = this.name || "Humans";
   return this.name + " can count to " + (op1 + op2);
+}
+
+function calculate(drinking, beer) {
+  return arg1 + arg2;
 }
 
 var voltron = new Robot("Voltron");
@@ -23,8 +26,10 @@ console.log(add(0, 1));
 console.log(add.call(voltron, 2, 3));
 
 // #3
-console.log(add.call(optimus, 20, 30));
+console.log(add.apply(optimus, [20, 30]));
 
 // #4
 
-console.log(  );
+var calculate = add.bind(bender);
+
+console.log(calculate("drinking ", "beer"));
