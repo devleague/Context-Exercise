@@ -7,10 +7,6 @@ function add ( op1, op2 ) {
   return this.name + " can count to " + (op1 + op2);
 }
 
-function calculate(drinking, beer) {
-  return arg1 + arg2;
-}
-
 var voltron = new Robot("Voltron");
 var bender = new Robot("Bender Rodriguez");
 var optimus = new Robot("Optimus Prime");
