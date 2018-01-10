@@ -17,14 +17,19 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(  );
+console.log('#1', add(0, 1));
 
 // #2  
-console.log(  );
+
+console.log('#2', add.call(voltron, 2, 3));
 
 // #3
-console.log(  );
+
+console.log('#3', add.apply(optimus, [20, 30]));
 
 // #4
+let calclulate = add.bind(bender)
+console.log('#4', calclulate('drinking', 'beer'));
 
-console.log(  );
+// bind the function add to a new function named calculate with the context of the object bender (using bind())
+// invoke the calculate passing in 2 arguments, "drinking " and "beer"
