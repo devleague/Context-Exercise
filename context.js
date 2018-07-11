@@ -17,14 +17,19 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
-console.log(  );
+let test1 = add(0, 1);
+console.log(test1);
 
 // #2  
-console.log(  );
+let test2 = add.call(voltron, 2, 3);
+console.log(test2);
 
 // #3
-console.log(  );
+let arr = [20, 30]
+let test3 = add.apply(optimus, arr);
+console.log(test3);
 
 // #4
-
-console.log(  );
+let calculate = add.bind(bender);
+let test4 = calculate("drinking ", "beer");
+console.log(test4);
